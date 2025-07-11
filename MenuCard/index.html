@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Card</title>
+    <style>
+
+        * {
+            font-family: 'Segoe UI', sans-serif ;
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+
+        body{
+            background-color: #f4f4f4;
+            color: #333;
+            font-style: italic;
+        }
+
+        header{
+            background-color: rgb(238, 245, 212);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        .Menu{
+            padding: 30px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .Menu h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .menu-categories {
+            margin-bottom: 30px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-categories h3 {
+            color: #d2691e;
+            margin-bottom: 15px;
+        }
+
+        .Menu-items {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .item{
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .item h4 {
+            margin-bottom: 5px;
+            color: #333;
+        } 
+
+        .item span{
+            position: absolute;
+            color: #666;
+            right: 20px;
+            top: 20px;
+        }
+
+        footer {
+            background-color: #bde0fe;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+            margin-top: 30px;
+        }
+
+        .item:hover {
+            background-color: #c9d1bc;
+            transform: scale(1.02);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+             <img src="images/logo.png" alt="AkYestra Cafe Logo" style="width: 100px; height: auto;">
+        <h1>AkYestra Cafe</h1>
+        <p>Delicious Bites & Sips</p>
+        </div>
+    </header>
+
+    <section class="Menu">
+        <h2>Menu</h2>
+        <div class="menu-categories">
+            <h3>🥟Starters</h3>
+            <div class="Menu-items">
+                <div class="item">
+                    <h4>Garlic Bread</h4>
+                    <p>Toasted bread with garlic butter</p>
+                    <span>₹99</span>
+                </div>
+
+                <div class="item">
+                    <h4>Veg/Non-Veg Loaded Nachos</h4>
+                    <p>Crispy nachos topped with cheese and veggies</p>
+                    <span>₹139/₹169</span>
+                </div>
+
+                <div class="item">
+                    <h4>Paneer Tikka Bites</h4>
+                    <p>Grilled paneer marinated in spices</p>
+                    <span>₹199</span>
+                </div>
+                
+                <div class="item">
+                    <h4>Veg/Non-Veg Spring Rolls</h4>
+                    <p>Crispy rolls filled with mixed vegetables</p>
+                    <span>₹129/₹149</span>
+                </div>
+                
+                <div class="item">
+                    <h4>Cheese Balls</h4>
+                    <p>Deep-fried cheese balls served with dip</p>
+                    <span>₹179</span>
+                </div>    
+            </div>
+        </div>
+
+        <div class="menu-categories">
+            <h3>🥪Sandwiches &🌯Wraps</h3>
+            <div class="Menu-items">
+                <div class="item">
+                    <h4>Classic Veg/Non-Veg Sandwich</h4>
+                    <p>Freshly made sandwich with your choice of filling</p>
+                    <span>₹99/₹129</span>
+                </div>
+
+                <div class="item">
+                    <h4>Grilled Cheese Sandwich</h4>
+                    <p>Toasted sandwich with melted cheese</p>
+                    <span>₹119</span>
+                </div>
+                
+                <div class="item">
+                    <h4>Paneer Tikka Wrap</h4>
+                    <p>Spicy paneer tikka wrapped in a soft tortilla</p>
+                    <span>₹149</span>
+                </div>
+                
+                <div class="item">
+                    <h4>Chicken Caesar Wrap</h4>
+                    <p>Grilled chicken with Caesar dressing in a wrap</p>
+                    <span>₹179</span>
+                </div>    
+            </div>
+        </div>
+
+        <div class="menu-categories">
+            <h3>🍕Pizzas</h3>
+            <div class="Menu-items">
+                <div class="item">
+                    <h4>Margherita pizza</h4>
+                    <p>Classic pizza with fresh tomatoes and basil</p>
+                    <span>₹249/₹349/₹559 (Small/Medium/Large)</span>  
+                </div>
+
+                <div class="item">
+                    <h4>Panner Supreme Pizza</h4>
+                    <p>Loaded with fresh vegetables and cheese</p>
+                    <span>₹299/₹399/₹599 (Small/Medium/Large)</span>
+                </div>
+                
+                <div class="item">
+                    <h4>Chicken Tikka Pizza</h4>
+                    <p>Spicy chicken tikka with cheese</p>
+                    <span>₹329/₹429/₹629 (Small/Medium/Large)</span>
+                </div>    
+            </div>
+        </div>
+
+        <div class="menu-categories">
+            <h3>🍹Beverages</h3>
+            <div class="Menu-items">
+                <div class="item">
+                    <h4>Cold Coffee</h4>
+                    <p>Chilled coffee with a hint of chocolate</p>
+                    <span>₹99</span>
+                </div>
+
+                <div class="item">
+                    <h4>Hot Coffee</h4>
+                    <p>Freshly brewed hot coffee</p>
+                    <span>₹89</span>
+                </div>
+                
+                <div class="item">
+                    <h4>Soft Drinks</h4>
+                    <p>Choose from a variety of soft drinks</p>
+                    <span>₹49</span>
+                </div>
+                
+                <div class="item">
+                    <h4>Fresh Juices</h4>
+                    <p>Seasonal fresh juices</p>
+                    <span>₹79</span>
+                </div>
+                
+                <div class="item">
+                    <h4>Mocktails</h4>
+                    <p>Refreshing non-alcoholic cocktails</p>
+                    <span>₹129</span>
+                </div>
+                
+                <div class="item">
+                    <h4>Milkshakes</h4>
+                    <p>Thick and creamy milkshakes</p>
+                    <span>₹149</span>
+                </div>    
+            </div>
+        </div>
+
+        <div class="menu-categories">
+            <h3>🧁Desserts</h3>
+            <div class="Menu-items">
+                <div class="item">
+                    <h4>Chocolate Brownie</h4>
+                    <p>Rich chocolate brownie served with ice cream</p>
+                    <span>₹99</span>
+                </div>
+
+                <div class="item">
+                    <h4>Ice Cream Sundae</h4>
+                    <p>Delicious ice cream topped with nuts and chocolate sauce</p>
+                    <span>₹129</span>
+                </div>
+                
+                <div class="item">
+                    <h4>Fruit Salad</h4>
+                    <p>Seasonal fresh fruits served with honey</p>
+                    <span>₹79</span>
+                </div>
+                
+                <div class="item">
+                    <h4>Cheesecake</h4>
+                    <p>Creamy cheesecake with a graham cracker crust</p>
+                    <span>₹149</span>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <footer>
+        <p>&copy; 2023 AkYestra Cafe. All rights reserved.</p>
+        <p>Follow us on social media: 
+            <a href="https://www.facebook.com" target="_blank">Facebook</a> | 
+            <a href="https://www.instagram.com" target="_blank">Instagram</a> | 
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        </p>
+    </footer>
+</body>
+</html>
